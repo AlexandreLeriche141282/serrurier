@@ -23,6 +23,12 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "RedRoseBold";
+  src: url("../assets/fonts/RedRose-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .header {
   position: relative;
   height: 20rem;
@@ -83,28 +89,84 @@ body {
   position: absolute;
   bottom: 2rem;
   left: 1rem;
-  font-size: clamp(26px, 3vw, 38px);
+  font-size: clamp(29px, 3vw, 38px);
   color: #ffffff;
-  font-weight: bold;
-  font-family: RedRose;
+  font-weight: 700;
   letter-spacing: 2px;
   line-height: 30px;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 .services {
-  padding: 2rem;
-}
-.services h2 {
+  font-family: Lato;
+  padding: 40px 20px;
   text-align: center;
-  color: #333;
-  margin-bottom: 1rem;
 }
-.services ul {
-  list-style-type: none;
+.services .services-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
-.services ul li {
-  margin-bottom: 0.5rem;
+.services .services-container .services-text {
+  font-size: clamp(24px, 2vw, 20px);
+  color: rgb(8, 71, 104);
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  font-family: Lato;
+}
+.services .services-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #254295;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(16px, 2vw, 18px);
+  padding: 15px 20px;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.services .services-container .btn:hover {
+  background-color: #1e3a7d;
+}
+.services .services-container .btn .btn-icon {
+  width: 39px;
+  height: auto;
+}
+.services .services-container .btn-call {
+  background-color: rgb(215, 0, 17);
+  font-size: clamp(30px, 2vw, 20px);
+  width: 300px;
+  margin: 20px auto;
+}
+.services .services-container .btn-call:hover {
+  background-color: #218838;
+}
+.services .services-container .btn-urgence {
+  background-color: rgb(215, 0, 17);
+  font-size: clamp(22px, 2vw, 20px);
   text-align: center;
-  font-size: 1.2rem;
-  color: #333;
+  border-radius: 50px;
+  height: 65px;
+}
+.services .services-container .btn-urgence:hover {
+  background-color: #c82333;
+}
+.services .services-container .btn-urgence .btn-icon-urgency {
+  width: 80px;
+  position: absolute;
+  left: 10px;
 }/*# sourceMappingURL=main.css.map */

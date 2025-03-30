@@ -10,6 +10,12 @@
   font-weight: normal; // Poids de la police (normal ou bold)
   font-style: normal; // Style de la police (normal ou italic)
 }
+@font-face {
+  font-family: 'RedRoseBold'; // Nom de la police que tu utiliseras dans font-family
+  src: url('../assets/fonts/RedRose-VariableFont_wght.ttf') format('truetype'); // Chemin vers le fichier de police
+  font-weight: normal; // Poids de la police (normal ou bold)
+  font-style: normal; // Style de la police (normal ou italic)
+}
 
 .header {
   position: relative;
@@ -68,10 +74,10 @@
       position: absolute; // Positionne le h2 indépendamment des autres éléments
       bottom: 2rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
       left: 1rem; // Positionne le h2 à gauche avec un espace de 20px depuis le bord gauche
-      font-size: clamp(26px, 3vw, 38px); // Min : petite taille, Idéal : responsive, Max : grande taille
+      font-size: clamp(29px, 3vw, 38px); // Min : petite taille, Idéal : responsive, Max : grande taille
       color: #ffffff; // Couleur blanche pour contraster avec l'arrière-plan
-      font-weight: bold; // Rend le texte plus visible et impactant
-      font-family: RedRose;
+      font-weight:700; // Rend le texte plus visible et impactant
+      // font-family: Lato;
       letter-spacing: 2px;
       line-height: 30px;
       
