@@ -6,8 +6,10 @@
   }
 
 .services {
+    max-width: 1380px;
+    margin: 0 auto;
     font-family: Lato;
-    padding: 40px 20px; // Espacement interne
+    padding: 40px 20px 20px 20px; // Espacement interne
     text-align: center; // Centrer le contenu
   
     .services-container {
@@ -48,15 +50,30 @@
       }
   
       .btn-call {
-        background-color: rgb(215,0,17); // Vert pour le bouton d'appel téléphonique
-        font-size: clamp(30px, 2vw, 20px);
+        background-color: rgb(215, 0, 17); /* Couleur de base */
+        font-size: clamp(20px, 2vw, 30px);
         width: 300px;
         margin: 20px auto;
-
-        &:hover {
-          background-color: #218838; // Vert plus foncé au survol
+        color: white; /* Texte lisible */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        animation: lightenPulse 2s infinite ease-in-out; /* Animation infinie */
+      }
+      
+      /* Définition de l'animation */
+      @keyframes lightenPulse {
+        0% {
+          filter: brightness(1); /* Couleur normale */
+        }
+        50% {
+          filter: brightness(1.2); /* Couleur légèrement plus claire */
+        }
+        100% {
+          filter: brightness(1); /* Retour à la couleur normale */
         }
       }
+      
   
       .btn-urgence {
         background-color: rgb(215,0,17); // Rouge pour le bouton d'urgence
