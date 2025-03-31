@@ -103,10 +103,18 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "RedRose";
+  src: url("../assets/fonts/RedRose-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 .services {
   max-width: 1380px;
   margin: 0 auto;
-  font-family: Lato;
+  font-family: RedRose;
+  font-weight: 100;
+  line-height: 20px;
   padding: 40px 20px 20px 20px;
   text-align: center;
 }
@@ -203,7 +211,7 @@ body {
 .services .services-container .btn-urgence .btn-icon-urgency {
   width: 80px;
   position: absolute;
-  left: 10px;
+  left: 5px;
 }
 
 @font-face {
@@ -274,14 +282,13 @@ body {
   color: rgb(180, 27, 27);
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
 }
 @media (max-width: 768px) {
-  .depannage-section .depannage-logo img {
+  .depannage-section .depannage-logo p img {
     margin-bottom: 10px;
   }
-  .depannage-section .depannage-logo p {
+  .depannage-section .depannage-logo p p {
     font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

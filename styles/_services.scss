@@ -4,11 +4,19 @@
     font-weight: normal; // Poids de la police (normal ou bold)
     font-style: normal; // Style de la police (normal ou italic)
   }
+@font-face {
+    font-family: 'RedRose'; // Nom de la police que tu utiliseras dans font-family
+    src: url('../assets/fonts/RedRose-VariableFont_wght.ttf'); // Chemin vers le fichier de police
+    font-weight: normal; // Poids de la police (normal ou bold)
+    font-style: normal; // Style de la police (normal ou italic)
+  }
 
 .services {
     max-width: 1380px;
     margin: 0 auto;
-    font-family: Lato;
+    font-family: RedRose;
+    font-weight: 100;
+    line-height: 20px;
     padding: 40px 20px 20px 20px; // Espacement interne
     text-align: center; // Centrer le contenu
   
@@ -87,7 +95,7 @@
         .btn-icon-urgency{
             width: 80px;
             position: absolute;
-            left: 10px;
+            left: 5px;
         }
       }
     }
