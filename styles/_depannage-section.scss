@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Lato'; // Nom de la police que tu utiliseras dans font-family
     src: url('../assets/fonts/Lato-Regular.ttf'); // Chemin vers le fichier de police
-    font-weight: normal; // Poids de la police (normal ou bold)
-    font-style: normal; // Style de la police (normal ou italic)
   }
   
   .depannage-section {
@@ -37,7 +35,7 @@
       text-align: center;
   
       .depannage-image img {
-        max-width: 80%; // Réduction de la taille de l'image sur mobile
+        max-width: 100%; // Réduction de la taille de l'image sur mobile
         margin: auto;
       }
   
@@ -62,7 +60,8 @@
         font-size: 20px;
         color: rgb(180, 27, 27); // Texte gris pour un contraste doux
         font-weight: 900; // Mettre le texte en valeur
-      }
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
       
       @media (max-width: 768px) {
         

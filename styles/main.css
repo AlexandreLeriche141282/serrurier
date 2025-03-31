@@ -209,8 +209,6 @@ body {
 @font-face {
   font-family: "Lato";
   src: url("../assets/fonts/Lato-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
 }
 .depannage-section {
   font-family: Lato;
@@ -250,7 +248,7 @@ body {
     text-align: center;
   }
   .depannage-section .depannage-image img {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
   }
   .depannage-section .depannage-texte {
@@ -275,6 +273,9 @@ body {
   font-size: 20px;
   color: rgb(180, 27, 27);
   font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 @media (max-width: 768px) {
   .depannage-section .depannage-logo img {
