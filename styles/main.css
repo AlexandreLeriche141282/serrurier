@@ -8,7 +8,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background-color: rgb(226, 226, 226);
 }
 
@@ -81,10 +80,10 @@ body {
 .header .header-content .floating-image {
   position: absolute;
   bottom: 0;
-  left: 9rem;
+  left: 10rem;
   width: auto;
   max-width: 550px;
-  height: 20rem;
+  height: 19rem;
 }
 .header .header-content .header-subtitle {
   position: absolute;
@@ -160,7 +159,7 @@ body {
 }
 .services .services-container .btn-call {
   background-color: rgb(215, 0, 17); /* Couleur de base */
-  font-size: clamp(20px, 2vw, 30px);
+  font-size: clamp(30px, 2vw, 30px);
   width: 300px;
   margin: 20px auto;
   color: white; /* Texte lisible */
@@ -290,5 +289,147 @@ body {
   }
   .depannage-section .depannage-logo p p {
     font-size: 16px;
+  }
+}
+
+@font-face {
+  font-family: "RedRose";
+  src: url("../assets/fonts/RedRose-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.assurance-section {
+  padding: 20px;
+  text-align: center;
+}
+.assurance-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #d70017;
+  font-family: RedRose;
+}
+.assurance-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #254295;
+  font-style: italic;
+  font-weight: 700;
+  font-family: Lato;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.assurance-section .assurance-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+}
+.assurance-section .assurance-logos img {
+  width: 60px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .assurance-section .assurance-logos {
+    gap: 10px;
+  }
+  .assurance-section .assurance-logos img {
+    width: 90px;
+  }
+  .assurance-section h2 {
+    font-size: 34px;
+  }
+  .assurance-section p {
+    font-size: 14px;
+  }
+}
+
+@font-face {
+  font-family: "RedRose";
+  src: url("../assets/fonts/RedRose-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.services-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.services-section h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #d70017;
+  font-family: RedRose;
+}
+.services-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #254295;
+  font-style: italic;
+  font-weight: 700;
+  font-family: Lato;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.services-section .services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.services-section .services-cards .card {
+  overflow: hidden;
+  text-align: left;
+}
+.services-section .services-cards .card img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services-section .services-cards .card h3 {
+  font-size: 20px;
+  margin: 15px;
+  color: rgb(180, 27, 27);
+  font-family: RedRose;
+}
+.services-section .services-cards .card p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #254295;
+  font-style: normal;
+  font-weight: 100;
+  font-family: Lato;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .services-section .services-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .services-section .card h3 {
+    font-size: 18px;
+  }
+  .services-section .card p {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */
