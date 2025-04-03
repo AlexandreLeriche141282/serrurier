@@ -32,6 +32,7 @@
     align-items: flex-start; // Aligne les éléments en haut du conteneur
     position: relative; // Nécessaire pour que les enfants absolus soient positionnés par rapport à ce conteneur
 
+    
     // Conteneur du logo et du titre
     .logo-container {
       display: flex;
