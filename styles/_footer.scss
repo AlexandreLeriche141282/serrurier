@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+
+    .footer-logo img {
+        margin-bottom: 10px;
+        width: 80px;
+    }
+
+    .footer-company-name p {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px 0;
+        font-family: Lato;
+        color: #254295;
+        span{
+          color: red;
+        }
+    }
+
+    .footer-legal a {
+        font-size: 14px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #666;
+    }
+}

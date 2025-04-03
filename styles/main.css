@@ -63,7 +63,7 @@ body {
   margin-top: 10px;
 }
 .header .header-content .logo-container .logo {
-  width: 150px;
+  width: 80px;
   height: auto;
 }
 .header .header-content .logo-container .site-title {
@@ -89,11 +89,12 @@ body {
   position: absolute;
   bottom: 2rem;
   left: 1rem;
-  font-size: clamp(29px, 3vw, 38px);
+  font-size: clamp(27px, 3vw, 38px);
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 30px;
+  font-family: RedRose;
 }
 
 @font-face {
@@ -166,8 +167,8 @@ body {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  -webkit-animation: lightenPulse 2s infinite ease-in-out;
-          animation: lightenPulse 2s infinite ease-in-out; /* Animation infinie */
+  -webkit-animation: lightenPulse 1.2s infinite ease-in-out;
+          animation: lightenPulse 1.2s infinite ease-in-out; /* Animation infinie */
 }
 @-webkit-keyframes lightenPulse {
   0% {
@@ -175,8 +176,8 @@ body {
             filter: brightness(1); /* Couleur normale */
   }
   50% {
-    -webkit-filter: brightness(1.2);
-            filter: brightness(1.2); /* Couleur légèrement plus claire */
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5); /* Couleur légèrement plus claire */
   }
   100% {
     -webkit-filter: brightness(1);
@@ -189,8 +190,8 @@ body {
             filter: brightness(1); /* Couleur normale */
   }
   50% {
-    -webkit-filter: brightness(1.2);
-            filter: brightness(1.2); /* Couleur légèrement plus claire */
+    -webkit-filter: brightness(1.5);
+            filter: brightness(1.5); /* Couleur légèrement plus claire */
   }
   100% {
     -webkit-filter: brightness(1);
@@ -457,8 +458,8 @@ body {
 }
 .testimonials-section .testimonials-content h2 {
   font-family: "Lato", sans-serif;
-  font-size: clamp(22px, 4vw, 42px);
-  color: #254295;
+  font-size: clamp(32px, 4vw, 42px);
+  color: #d70017;
   margin-bottom: 20px;
 }
 .testimonials-section .testimonials-content h2 span {
@@ -467,9 +468,10 @@ body {
 .testimonials-section .testimonials-content p {
   font-family: "RedRose", sans-serif;
   font-size: clamp(16px, 2vw, 24px);
-  color: #333;
+  color: #254295;
   line-height: 1.6;
   margin-bottom: 30px;
+  font-style: italic;
 }
 .testimonials-section .tagembed-widget {
   width: 100%;
@@ -479,4 +481,112 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+  font-family: "RedRose";
+  src: url("./assets/fonts/RedRose-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.pre-footer {
+  background-color: rgb(215, 0, 17);
+  border-radius: 50px;
+  margin: 25px;
+  font-family: RedRose;
+}
+.pre-footer .text-section p {
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  padding: 0 10px;
+}
+.pre-footer img {
+  width: 350px;
+  margin-top: -30px;
+}
+.pre-footer .phone-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pre-footer .phone-section .blink {
+  -webkit-animation: clignoter 1.2s linear infinite;
+          animation: clignoter 1.2s linear infinite;
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pre-footer .phone-section .blink a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 30px;
+}
+.pre-footer .phone-section .blink a img {
+  width: 30px;
+  margin-left: 10px;
+}
+.pre-footer .text-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 15px 0;
+  font-size: 25px;
+}
+@-webkit-keyframes clignoter {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes clignoter {
+  50% {
+    opacity: 0;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+.footer .footer-logo img {
+  margin-bottom: 10px;
+  width: 80px;
+}
+.footer .footer-company-name p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px 0;
+  font-family: Lato;
+  color: #254295;
+}
+.footer .footer-company-name p span {
+  color: red;
+}
+.footer .footer-legal a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer .footer-legal a:hover {
+  text-decoration: underline;
+}
+.footer p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #666;
 }/*# sourceMappingURL=main.css.map */

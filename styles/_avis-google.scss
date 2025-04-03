@@ -23,8 +23,8 @@
   
       h2 {
         font-family: 'Lato', sans-serif;
-        font-size: clamp(22px, 4vw, 42px);
-        color: #254295;
+        font-size: clamp(32px, 4vw, 42px);
+        color: #d70017; // Couleur rouge pour le titre
         margin-bottom: 20px;
   
         span {
@@ -35,9 +35,10 @@
       p {
         font-family: 'RedRose', sans-serif;
         font-size: clamp(16px, 2vw, 24px);
-        color: #333;
+        color: #254295;
         line-height: 1.6;
         margin-bottom: 30px;
+        font-style: italic;
       }
     }
   

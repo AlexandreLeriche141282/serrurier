@@ -41,7 +41,7 @@
       margin-top: 10px; // Ajoute un espace en haut pour éloigner du bord supérieur
       
       .logo {
-        width: 150px; // Taille du logo
+        width: 80px; // Taille du logo
         height: auto;
       }
       
@@ -74,13 +74,13 @@
       position: absolute; // Positionne le h2 indépendamment des autres éléments
       bottom: 2rem; // Aligne le h2 en bas du header avec un espace de 20px depuis le bord inférieur
       left: 1rem; // Positionne le h2 à gauche avec un espace de 20px depuis le bord gauche
-      font-size: clamp(29px, 3vw, 38px); // Min : petite taille, Idéal : responsive, Max : grande taille
+      font-size: clamp(27px, 3vw, 38px); // Min : petite taille, Idéal : responsive, Max : grande taille
       color: #ffffff; // Couleur blanche pour contraster avec l'arrière-plan
       font-weight:700; // Rend le texte plus visible et impactant
       // font-family: Lato;
       letter-spacing: 2px;
       line-height: 30px;
-      
+      font-family: RedRose;
       
     }
   }
