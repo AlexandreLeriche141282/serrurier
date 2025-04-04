@@ -28,9 +28,12 @@
         font-size: clamp(24px, 2vw, 20px); // Taille responsive du texte
         color: rgb(8,71,104); // Couleur du texte
         margin-bottom: 20px; // Espacement sous le texte
-        font-weight: bold;
+        // font-weight: bold;
         line-height: 28px;
         font-family:Lato;
+        span{
+          font-weight: bold;
+        }
       }
   
       .btn {

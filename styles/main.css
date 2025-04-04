@@ -127,9 +127,11 @@ body {
   font-size: clamp(24px, 2vw, 20px);
   color: rgb(8, 71, 104);
   margin-bottom: 20px;
-  font-weight: bold;
   line-height: 28px;
   font-family: Lato;
+}
+.services .services-container .services-text span {
+  font-weight: bold;
 }
 .services .services-container .btn {
   display: -webkit-box;
