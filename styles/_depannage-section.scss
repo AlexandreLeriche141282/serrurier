@@ -4,12 +4,24 @@
   }
   
   .depannage-section {
+    max-width: 1380px;
+    margin: 20px auto;
     font-family: Lato;
     display: flex; // Affichage en ligne des deux colonnes
     align-items: center; // Centrage vertical
     justify-content: space-between; // Espacement entre les colonnes
     padding: 20px;
     gap: 20px;
+
+    .depannage-content {
+      display: flex;
+      flex-direction: column;
+    
+      @media (min-width: 768px) {
+        flex: 1;
+      }
+    }
+    
   
     .depannage-image {
       img {
@@ -74,6 +86,20 @@
           font-size: 16px; // Augmente légèrement la taille du texte sur mobile
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .depannage-section {
+    .depannage-texte {
+      margin-bottom: 20px;
+    }
+
+    .depannage-logo {
+      // Force le logo à s’afficher sous le texte
+      width: 100%;
+      justify-content: flex-start;
     }
   }
 }

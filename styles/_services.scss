@@ -21,7 +21,7 @@
     text-align: center; // Centrer le contenu
   
     .services-container {
-      max-width: 800px; // Largeur maximale du conteneur
+      max-width: 1000px; // Largeur maximale du conteneur
       margin: 0 auto; // Centrer horizontalement
   
       .services-text {
@@ -92,15 +92,45 @@
         text-align: center;
         border-radius: 50px;
         height: 65px;
+        max-width: 350px;
+        margin: 0 auto;
         &:hover {
           background-color: #c82333; // Rouge plus foncé au survol
         }
         .btn-icon-urgency{
             width: 80px;
-            position: absolute;
-            left: 5px;
+            
         }
       }
     }
   }
+  
+  @media (min-width: 768px) {
+    .services-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+  
+      .services-text {
+        flex: 1;
+        margin-bottom: 0;
+        order: 2;
+      }
+  
+      .btn-call {
+        order: 1;
+        margin: 0;
+        flex-shrink: 0;
+      }
+  
+      .btn-urgence {
+        order: 3;
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+  }
+  
   

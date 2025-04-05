@@ -9,6 +9,13 @@
     background-color: rgb(215,0,17);
     border-radius: 50px;
     margin: 25px;
+    @media (min-width: 992px) { // ou 1024px selon vos besoins
+        max-width: 1080px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+      }
+    
     font-family:RedRose;
 .text-section{
     p{
