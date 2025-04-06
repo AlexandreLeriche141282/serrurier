@@ -12,6 +12,9 @@
 .assurance-section {
     padding: 20px;
     text-align: center;
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   
     h2 {
       font-size: clamp(24px, 4vw, 42px); // Min: 18px, Idéal: 4% de la largeur de l'écran, Max: 42px
@@ -34,11 +37,15 @@
   
     .assurance-logos {
       display: flex; // Aligne les logos horizontalement
-      justify-content: center; // Centre les logos
+      justify-content: space-evenly; // Centre les logos
       gap: 20px; // Espacement entre chaque logo
       flex-wrap: wrap; // Permet aux logos de passer à la ligne si l'écran est trop petit
       background: white;
       border-radius: 10px;
+      @media (min-width: 768px) {
+        border-radius: 0;
+        padding: 10px;
+      }
   
       img {
         width: 60px; // Taille des logos

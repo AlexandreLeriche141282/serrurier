@@ -95,7 +95,7 @@ body #backToTopBtn:hover {
 }
 .header .header-content .logo-container .site-title {
   position: absolute;
-  font-size: clamp(22px, 4vw, 60px);
+  font-size: clamp(22px, 4vw, 80px);
   color: #254295;
   margin-top: 110px;
   margin-left: 5px;
@@ -106,8 +106,8 @@ body #backToTopBtn:hover {
 }
 @media (min-width: 992px) {
   .header .header-content .logo-container .site-title {
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 200px;
+    margin-left: 45px;
   }
 }
 .header .header-content .floating-image {
@@ -128,12 +128,20 @@ body #backToTopBtn:hover {
   position: absolute;
   bottom: 2rem;
   left: 1rem;
-  font-size: clamp(27px, 3vw, 38px);
+  font-size: clamp(27px, 3vw, 48px);
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 30px;
   font-family: RedRose;
+}
+@media (min-width: 992px) {
+  .header .header-content .header-subtitle {
+    bottom: 8rem;
+    left: 4rem;
+    line-height: 45px;
+    font-weight: 900;
+  }
 }
 
 @font-face {
@@ -417,6 +425,11 @@ body #backToTopBtn:hover {
   padding: 20px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .assurance-section {
+    padding: 0;
+  }
+}
 .assurance-section h2 {
   font-size: clamp(24px, 4vw, 42px);
   margin-bottom: 15px;
@@ -438,14 +451,20 @@ body #backToTopBtn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: white;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .assurance-section .assurance-logos {
+    border-radius: 0;
+    padding: 10px;
+  }
 }
 .assurance-section .assurance-logos img {
   width: 60px;
@@ -713,4 +732,74 @@ body #backToTopBtn:hover {
   font-size: 12px;
   margin-top: 10px;
   color: #666;
+}
+
+.marques-section {
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .marques-section {
+    padding: 0;
+  }
+}
+.marques-section h2 {
+  font-size: clamp(24px, 4vw, 42px);
+  margin-bottom: 15px;
+  color: #d70017;
+  font-family: RedRose;
+}
+.marques-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #254295;
+  font-style: italic;
+  font-weight: 700;
+  font-family: Lato;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.marques-section .marques-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .marques-section .marques-logos {
+    border-radius: 0;
+  }
+}
+.marques-section .marques-logos img {
+  width: 90px;
+  height: auto;
+}
+.marques-section .marques-logos a {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .marques-section .marques-logos {
+    gap: 10px;
+    padding: 10px;
+  }
+  .marques-section .marques-logos img {
+    width: 90px;
+  }
+  .marques-section h2 {
+    font-size: 34px;
+  }
+  .marques-section p {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
