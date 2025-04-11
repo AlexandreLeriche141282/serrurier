@@ -38,7 +38,25 @@
 
     p {
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 15px;
         color: #666;
+    }
+    .site-realise-par {
+        display: flex;
+        align-items: center; /* Centre verticalement */
+        justify-content: center; /* Centre horizontalement */
+        // margin-top: 10px; /* Ajustez l'espacement selon vos besoins */
+        p {
+            margin-right: 5px; /* Espacement entre le texte et le logo */
+            font-size: 0.8em; /* Taille de la police */
+            color: #777; /* Couleur du texte */
+        }
+        a {
+            img {
+                height: 40px; /* Hauteur du logo */
+                width: auto; /* Largeur automatique pour conserver les proportions */
+                display: block; /* Supprime l'espacement supplémentaire autour de l'image */
+            }
+        }
     }
 }

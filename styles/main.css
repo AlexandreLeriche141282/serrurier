@@ -262,6 +262,10 @@ body #backToTopBtn:hover {
 .services .services-container .btn-urgence .btn-icon-urgency {
   width: 80px;
 }
+.services .logo-rncp {
+  width: 200px;
+  padding-top: 50px;
+}
 
 @media (min-width: 768px) {
   .services-container {
@@ -730,8 +734,29 @@ body #backToTopBtn:hover {
 }
 .footer p {
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #666;
+}
+.footer .site-realise-par {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Centre verticalement */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Centre horizontalement */
+}
+.footer .site-realise-par p {
+  margin-right: 5px; /* Espacement entre le texte et le logo */
+  font-size: 0.8em; /* Taille de la police */
+  color: #777; /* Couleur du texte */
+}
+.footer .site-realise-par a img {
+  height: 40px; /* Hauteur du logo */
+  width: auto; /* Largeur automatique pour conserver les proportions */
+  display: block; /* Supprime l'espacement supplémentaire autour de l'image */
 }
 
 .marques-section {
@@ -802,4 +827,78 @@ body #backToTopBtn:hover {
   .marques-section p {
     font-size: 14px;
   }
+}
+
+.legal-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.legal-header h1 {
+  color: #007BFF;
+}
+
+.legal-main .legal-section {
+  margin-bottom: 30px;
+}
+.legal-main .legal-section h2 {
+  color: #007BFF;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.legal-main .legal-section p {
+  margin-bottom: 15px;
+}
+.legal-main .back-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.legal-main .back-link:hover {
+  background-color: #0062cc;
+}
+
+.legal-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+.legal-footer .site-realise-par {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Centre verticalement */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* Centre horizontalement */
+}
+.legal-footer .site-realise-par p {
+  margin-right: 5px; /* Espacement entre le texte et le logo */
+  font-size: 0.8em; /* Taille de la police */
+  color: #777; /* Couleur du texte */
+}
+.legal-footer .site-realise-par a img {
+  height: 40px; /* Hauteur du logo */
+  width: auto; /* Largeur automatique pour conserver les proportions */
+  display: block; /* Supprime l'espacement supplémentaire autour de l'image */
 }/*# sourceMappingURL=main.css.map */
