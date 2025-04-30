@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://alexandreleriche141282.github.io/serrurier.xml

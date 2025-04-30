@@ -4,17 +4,23 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- Page d'accueil (présentation) -->
   <url>
-    <loc>https://alexandreleriche141282.github.io/serrurier.html/</loc>
-    <lastmod>2025-04-03</lastmod>
+    <loc>https://serrurier-lille-urgence.fr/index.html</loc>
+    <lastmod>2025-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://serrurier-lille-urgence.fr/serrurier-lille-la-madeleine.html</loc>
+    <lastmod>2025-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- Page des mentions légales -->
   <url>
-    <loc>https://alexandreleriche141282.github.io/serrurier/mentions-legales.html</loc>
+    <loc>https://www.serrurier-lille-urgence.fr/mentions-legales.html</loc>
     <lastmod>2025-04-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
 </urlset>
