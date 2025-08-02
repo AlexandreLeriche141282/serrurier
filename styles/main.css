@@ -837,7 +837,7 @@ body #backToTopBtn:hover {
   transition: background-color 0.3s ease;
 }
 .legal-main .back-link:hover {
-  background-color: #0062cc;
+  background-color: rgb(0, 98.4, 204);
 }
 
 .legal-footer {
@@ -921,4 +921,57 @@ body #backToTopBtn:hover {
   padding: 10px 15px;
   margin: 0;
   font-weight: 500;
+}
+
+.serrurier-lille {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  width: 100%;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+.serrurier-lille__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.serrurier-lille__overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(28, 28, 28, 0.65);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+}
+.serrurier-lille__overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.serrurier-lille__overlay p {
+  font-size: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .serrurier-lille {
+    min-height: 220px;
+  }
+  .serrurier-lille__overlay {
+    padding: 1.2rem 0.7rem;
+  }
+  .serrurier-lille__overlay h2 {
+    font-size: 1.25rem;
+  }
+  .serrurier-lille__overlay p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
