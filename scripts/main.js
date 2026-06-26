@@ -47,3 +47,33 @@ document.querySelectorAll('img').forEach(img => {
         : panel.scrollHeight + 'px';
     })
   );
+
+  // Intervention videos ------------------------------------------------------------
+
+
+
+document.querySelectorAll('.video-card').forEach(card => {
+    const placeholder = card.querySelector('.video-placeholder');
+
+    placeholder.addEventListener('click', () => {
+      if (card.classList.contains('is-playing')) return;
+
+      const videoSrc = card.dataset.video;
+
+      const video = document.createElement('video');
+      video.src = videoSrc;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
+      video.setAttribute('aria-label', 'Vidéo d’intervention de serrurerie');
+      video.style.width = '100%';
+      video.style.height = '100%';
+      video.style.borderRadius = '6px';
+
+      card.classList.add('is-playing');
+      placeholder.replaceWith(video);
+    });
+  });
+
+  // Changement automatique de la date ----------------------------------------------------------------------------
+document.getElementById("year").textContent = new Date().getFullYear();

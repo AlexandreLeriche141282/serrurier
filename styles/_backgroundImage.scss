@@ -8,6 +8,11 @@
   padding: 2rem 1rem;
   overflow: hidden;
 
+  a{
+    color: white;
+    font-style: italic;
+  }
+
   &__bg {
     position: absolute;
     inset: 0;

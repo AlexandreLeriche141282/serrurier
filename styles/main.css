@@ -28,6 +28,9 @@ body #backToTopBtn {
 body #backToTopBtn:hover {
   background-color: #0056b3; /* Couleur au survol */
 }
+body a {
+  text-decoration: none;
+}
 
 @font-face {
   font-family: "RedRose";
@@ -49,7 +52,7 @@ body #backToTopBtn:hover {
 }
 .header {
   position: relative;
-  height: 20rem;
+  height: 22rem;
   display: flex;
   max-width: 1380px;
   margin: 0 auto;
@@ -82,7 +85,7 @@ body #backToTopBtn:hover {
   position: absolute;
   font-size: clamp(22px, 4vw, 80px);
   color: #254295;
-  margin-top: 110px;
+  margin-top: 170px;
   margin-left: 5px;
   font-family: Lato;
 }
@@ -91,14 +94,14 @@ body #backToTopBtn:hover {
 }
 @media (min-width: 992px) {
   .header .header-content .logo-container .site-title {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: 45px;
   }
 }
 .header .header-content .floating-image {
   position: absolute;
   bottom: 0;
-  left: 10rem;
+  left: 13rem;
   width: auto;
   max-width: 550px;
   height: 19rem;
@@ -153,7 +156,6 @@ body #backToTopBtn:hover {
 .services .services-container {
   max-width: 1000px;
   margin: 0 auto;
-  /* Définition de l'animation */
 }
 .services .services-container .services-text {
   font-size: clamp(24px, 2vw, 20px);
@@ -195,6 +197,9 @@ body #backToTopBtn:hover {
   padding: 10px 20px;
   cursor: pointer;
   animation: lightenPulse 1.2s infinite ease-in-out; /* Animation infinie */
+}
+.services .services-container {
+  /* Définition de l'animation */
 }
 @keyframes lightenPulse {
   0% {
@@ -451,9 +456,8 @@ body #backToTopBtn:hover {
   display: block;
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 220px;
+  object-fit: cover;
+  height: 250px;
 }
 .services-section .services-cards .card h3 {
   font-size: 20px;
@@ -541,7 +545,6 @@ body #backToTopBtn:hover {
   background-color: rgb(215, 0, 17);
   border-radius: 50px;
   margin: 25px;
-  font-family: RedRose;
 }
 @media (min-width: 992px) {
   .pre-footer {
@@ -550,6 +553,9 @@ body #backToTopBtn:hover {
     display: flex;
     justify-content: center;
   }
+}
+.pre-footer {
+  font-family: RedRose;
 }
 .pre-footer .text-section p {
   color: white;
@@ -933,13 +939,16 @@ body #backToTopBtn:hover {
   padding: 2rem 1rem;
   overflow: hidden;
 }
+.serrurier-lille a {
+  color: white;
+  font-style: italic;
+}
 .serrurier-lille__bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 0;
 }
 .serrurier-lille__overlay {
@@ -974,4 +983,202 @@ body #backToTopBtn:hover {
   .serrurier-lille__overlay p {
     font-size: 1rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.intervention-videos {
+  padding: 4rem 1rem;
+  background-color: #f7f7f7;
+}
+.intervention-videos h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #d70017;
+}
+.intervention-videos {
+  /* Grid */
+}
+.intervention-videos .videos-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.intervention-videos {
+  /* Carte */
+}
+.intervention-videos .video-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.intervention-videos {
+  /* Placeholder (image + bouton play) */
+}
+.intervention-videos .video-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.intervention-videos .video-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+.intervention-videos .video-placeholder {
+  /* Bonus hover 🔥 */
+}
+.intervention-videos .video-placeholder:hover img {
+  filter: brightness(0.85);
+}
+.intervention-videos {
+  /* Bouton play */
+}
+.intervention-videos .play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.intervention-videos .play-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 12px 0 12px 18px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.intervention-videos .play-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.05);
+}
+.intervention-videos {
+  /* Légende */
+}
+.intervention-videos figcaption,
+.intervention-videos p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #254295;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .intervention-videos .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===============================
+   Section SEO – Serrurier Lille
+================================= */
+.seo-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+.seo-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.seo-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #d70017;
+}
+.seo-section h3 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #254295;
+  position: relative;
+}
+.seo-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #444;
+  font-style: italic;
+}
+.seo-section ul {
+  margin: 15px 0 25px 20px;
+  padding-left: 10px;
+}
+.seo-section ul li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #333;
+  font-style: italic;
+}
+.seo-section ul strong {
+  font-style: normal;
+}
+.seo-section {
+  /* Deuxième bloc SEO enchaîné après expertise */
+}
+.seo-section--suite {
+  padding-top: 0;
+}
+.seo-section--suite .container {
+  border-top: 2px solid rgba(215, 0, 23, 0.15);
+  padding-top: 60px;
+}
+.seo-section {
+  /* Liste quartiers spécifique */
+}
+.seo-section .quartiers-lille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+.seo-section .quartiers-lille li {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.seo-section .quartiers-lille li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   Responsive
+================================= */
+@media (max-width: 768px) {
+  .seo-section {
+    padding: 60px 15px;
+  }
+  .seo-section h2 {
+    font-size: 1.8rem;
+  }
+  .seo-section h3 {
+    font-size: 1.3rem;
+  }
+  .seo-section p,
+  .seo-section ul li {
+    font-size: 1rem;
+  }
+}

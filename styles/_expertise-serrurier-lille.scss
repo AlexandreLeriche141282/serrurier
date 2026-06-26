@@ -1,0 +1,113 @@
+/* ===============================
+   Section SEO – Serrurier Lille
+================================= */
+
+.seo-section {
+  padding: 80px 20px;
+  background: #f8f9fa;
+  
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #d70017;;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #254295;
+    position: relative;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #444;
+    font-style: italic;
+  }
+
+  ul {
+    margin: 15px 0 25px 20px;
+    padding-left: 10px;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+      color: #333;
+      font-style: italic;
+    }
+
+    strong {
+      font-style: normal;
+    }
+  }
+
+  /* Deuxième bloc SEO enchaîné après expertise */
+  &--suite {
+    padding-top: 0;
+
+    .container {
+      border-top: 2px solid rgba(215, 0, 23, 0.15);
+      padding-top: 60px;
+    }
+  }
+
+  /* Liste quartiers spécifique */
+  .quartiers-lille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      background: white;
+      padding: 12px 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+}
+
+/* ===============================
+   Responsive
+================================= */
+
+@media (max-width: 768px) {
+  .seo-section {
+    padding: 60px 15px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p,
+    ul li {
+      font-size: 1rem;
+    }
+  }
+}
