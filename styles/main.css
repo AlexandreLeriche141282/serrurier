@@ -646,6 +646,42 @@ body a {
 .footer .footer-company-name p span {
   color: red;
 }
+.footer .footer-social {
+  margin-top: 15px;
+}
+.footer .footer-social h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #254295;
+  margin-bottom: 12px;
+}
+.footer .footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.footer .footer-social .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.footer .footer-social .social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.footer .footer-social .social-icons a.facebook {
+  background-color: #1877f2;
+}
+.footer .footer-social .social-icons a.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
 .footer .footer-navigation,
 .footer .footer-localisation,
 .footer .footer-villes,
@@ -843,7 +879,7 @@ body a {
   transition: background-color 0.3s ease;
 }
 .legal-main .back-link:hover {
-  background-color: rgb(0, 98.4, 204);
+  background-color: rgb(0%, 38.5882352941%, 80%);
 }
 
 .legal-footer {
@@ -1180,5 +1216,69 @@ body a {
   .seo-section p,
   .seo-section ul li {
     font-size: 1rem;
+  }
+}
+.actualites-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+.actualites-section h2 {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  color: #d70017;
+  margin-bottom: 15px;
+}
+.actualites-section > p {
+  font-family: "RedRose", sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  color: #254295;
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.actualites-section .actualites-feed {
+  max-width: 500px;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.actualites-section .actualites-feed iframe {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  border: none;
+}
+.actualites-section .btn-facebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: #1877f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.actualites-section .btn-facebook i {
+  font-size: 1.2rem;
+}
+.actualites-section .btn-facebook:hover {
+  background-color: #166fe5;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .actualites-section {
+    padding: 40px 15px;
+  }
+  .actualites-section .actualites-feed iframe {
+    min-height: 400px;
   }
 }
