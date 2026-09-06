@@ -456,7 +456,8 @@ body a {
   display: block;
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 250px;
 }
 .services-section .services-cards .card h3 {
@@ -879,7 +880,7 @@ body a {
   transition: background-color 0.3s ease;
 }
 .legal-main .back-link:hover {
-  background-color: rgb(0%, 38.5882352941%, 80%);
+  background-color: rgb(0, 98.4, 204);
 }
 
 .legal-footer {
@@ -984,7 +985,8 @@ body a {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 0;
 }
 .serrurier-lille__overlay {
@@ -1063,7 +1065,8 @@ body a {
 .intervention-videos .video-placeholder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   transition: filter 0.3s ease;
 }
@@ -1281,4 +1284,4 @@ body a {
   .actualites-section .actualites-feed iframe {
     min-height: 400px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
